@@ -1,4 +1,5 @@
 /* eslint-disable quote-props */
+/* eslint-disable max-len */
 /**
  * Translation file for this resouce.
  *
@@ -19,168 +20,64 @@
 export default {
     'interface': {
         'en': {
-            'device.arduinoUnoR4Minima.description': 'Offers enhanced performance and expanded memory, maintaining compatibility with existing shields and accessories.'
+            'softwareSerial.name': 'Software Serial',
+            'softwareSerial.description': 'Allow serial communication on other digital pins of the Arduino.'
         },
         'ru': {
-            'device.arduinoUnoR4Minima.description': 'Offers enhanced performance and expanded memory, maintaining compatibility with existing shields and accessories.'
+            'softwareSerial.name': 'Software Serial',
+            'softwareSerial.description': 'Allow serial communication on other digital pins of the Arduino.'
         },
         'zh-cn': {
-            'device.arduinoUnoR4Minima.description': 'Offers enhanced performance and expanded memory, maintaining compatibility with existing shields and accessories.'
+            'softwareSerial.name': 'Software Serial',
+            'softwareSerial.description': 'Allow serial communication on other digital pins of the Arduino.'
         },
         'zh-tw': {
-            'device.arduinoUnoR4Minima.description': 'Offers enhanced performance and expanded memory, maintaining compatibility with existing shields and accessories.'
+            'softwareSerial.name': 'Software Serial',
+            'softwareSerial.description': 'Allow serial communication on other digital pins of the Arduino.'
         }
     },
     'extensions': {
-        'en': {
-            'arduinoUnoR4Minima.modeMenu.input': 'input',
-            'arduinoUnoR4Minima.modeMenu.output': 'output',
-            'arduinoUnoR4Minima.modeMenu.inputPullup': 'input-pullup',
-            'arduinoUnoR4Minima.levelMenu.high': 'high',
-            'arduinoUnoR4Minima.levelMenu.low': 'low',
-            'arduinoUnoR4Minima.InterrupModeMenu.risingEdge': 'rising edge',
-            'arduinoUnoR4Minima.InterrupModeMenu.fallingEdge': 'falling edge',
-            'arduinoUnoR4Minima.InterrupModeMenu.changeEdge': 'change edge',
-            'arduinoUnoR4Minima.InterrupModeMenu.low': 'low',
-            'arduinoUnoR4Minima.eolMenu.warp': 'warp',
-            'arduinoUnoR4Minima.eolMenu.noWarp': 'no-warp',
-            'arduinoUnoR4Minima.dataTypeMenu.integer': 'integer',
-            'arduinoUnoR4Minima.dataTypeMenu.decimal': 'decimal',
-            'arduinoUnoR4Minima.dataTypeMenu.string': 'string',
-            'arduinoUnoR4Minima.category.pins': 'Pins',
-            'arduinoUnoR4Minima.pins.setPinMode': 'set pin [PIN] mode [MODE]',
-            'arduinoUnoR4Minima.pins.setDigitalOutput': 'set digital pin [PIN] out [LEVEL]',
-            'arduinoUnoR4Minima.pins.setPwmOutput': 'set pwm pin [PIN] out [OUT]',
-            'arduinoUnoR4Minima.pins.readDigitalPin': 'read digital pin [PIN]',
-            'arduinoUnoR4Minima.pins.readAnalogPin': 'read analog pin [PIN]',
-            'arduinoUnoR4Minima.pins.setServoOutput': 'set servo pin [PIN] out [OUT]',
-            'arduinoUnoR4Minima.pins.attachInterrupt': 'attach interrupt pin [PIN] mode [MODE] executes',
-            'arduinoUnoR4Minima.pins.detachInterrupt': 'detach interrupt pin [PIN]',
-            'arduinoUnoR4Minima.category.serial': 'Serial',
-            'arduinoUnoR4Minima.serial.serialBegin': 'serial begin baudrate [VALUE]',
-            'arduinoUnoR4Minima.serial.serialPrint': 'serial print [VALUE] [EOL]',
-            'arduinoUnoR4Minima.serial.serialAvailable': 'serial available data length',
-            'arduinoUnoR4Minima.serial.serialReadAByte': 'serial read a byte',
-            'arduinoUnoR4Minima.category.data': 'Data',
-            'arduinoUnoR4Minima.data.dataMap': 'map [DATA] from ([ARG0], [ARG1]) to ([ARG2], [ARG3])',
-            'arduinoUnoR4Minima.data.dataConstrain': 'constrain [DATA] between ([ARG0], [ARG1])',
-            'arduinoUnoR4Minima.data.dataConvert': 'convert [DATA] to [TYPE]',
-            'arduinoUnoR4Minima.data.dataConvertASCIICharacter': 'convert [DATA] to ASCII character',
-            'arduinoUnoR4Minima.data.dataConvertASCIINumber': 'convert [DATA] to ASCII nubmer'
-        },
-        'ru': {
-            'arduinoUnoR4Minima.modeMenu.input': 'input',
-            'arduinoUnoR4Minima.modeMenu.output': 'output',
-            'arduinoUnoR4Minima.modeMenu.inputPullup': 'input-pullup',
-            'arduinoUnoR4Minima.levelMenu.high': 'high',
-            'arduinoUnoR4Minima.levelMenu.low': 'low',
-            'arduinoUnoR4Minima.InterrupModeMenu.risingEdge': 'rising edge',
-            'arduinoUnoR4Minima.InterrupModeMenu.fallingEdge': 'falling edge',
-            'arduinoUnoR4Minima.InterrupModeMenu.changeEdge': 'change edge',
-            'arduinoUnoR4Minima.InterrupModeMenu.low': 'low',
-            'arduinoUnoR4Minima.eolMenu.warp': 'warp',
-            'arduinoUnoR4Minima.eolMenu.noWarp': 'no-warp',
-            'arduinoUnoR4Minima.dataTypeMenu.integer': 'integer',
-            'arduinoUnoR4Minima.dataTypeMenu.decimal': 'decimal',
-            'arduinoUnoR4Minima.dataTypeMenu.string': 'string',
-            'arduinoUnoR4Minima.category.pins': 'Pins',
-            'arduinoUnoR4Minima.pins.setPinMode': 'set pin [PIN] mode [MODE]',
-            'arduinoUnoR4Minima.pins.setDigitalOutput': 'set digital pin [PIN] out [LEVEL]',
-            'arduinoUnoR4Minima.pins.setPwmOutput': 'set pwm pin [PIN] out [OUT]',
-            'arduinoUnoR4Minima.pins.readDigitalPin': 'read digital pin [PIN]',
-            'arduinoUnoR4Minima.pins.readAnalogPin': 'read analog pin [PIN]',
-            'arduinoUnoR4Minima.pins.setServoOutput': 'set servo pin [PIN] out [OUT]',
-            'arduinoUnoR4Minima.pins.attachInterrupt': 'attach interrupt pin [PIN] mode [MODE] executes',
-            'arduinoUnoR4Minima.pins.detachInterrupt': 'detach interrupt pin [PIN]',
-            'arduinoUnoR4Minima.category.serial': 'Serial',
-            'arduinoUnoR4Minima.serial.serialBegin': 'serial begin baudrate [VALUE]',
-            'arduinoUnoR4Minima.serial.serialPrint': 'serial print [VALUE] [EOL]',
-            'arduinoUnoR4Minima.serial.serialAvailable': 'serial available data length',
-            'arduinoUnoR4Minima.serial.serialReadAByte': 'serial read a byte',
-            'arduinoUnoR4Minima.category.data': 'Data',
-            'arduinoUnoR4Minima.data.dataMap': 'map [DATA] from ([ARG0], [ARG1]) to ([ARG2], [ARG3])',
-            'arduinoUnoR4Minima.data.dataConstrain': 'constrain [DATA] between ([ARG0], [ARG1])',
-            'arduinoUnoR4Minima.data.dataConvert': 'convert [DATA] to [TYPE]',
-            'arduinoUnoR4Minima.data.dataConvertASCIICharacter': 'convert [DATA] to ASCII character',
-            'arduinoUnoR4Minima.data.dataConvertASCIINumber': 'convert [DATA] to ASCII nubmer'
-        },
-        'zh-cn': {
-            'arduinoUnoR4Minima.modeMenu.input': 'input',
-            'arduinoUnoR4Minima.modeMenu.output': 'output',
-            'arduinoUnoR4Minima.modeMenu.inputPullup': 'input-pullup',
-            'arduinoUnoR4Minima.levelMenu.high': 'high',
-            'arduinoUnoR4Minima.levelMenu.low': 'low',
-            'arduinoUnoR4Minima.InterrupModeMenu.risingEdge': 'rising edge',
-            'arduinoUnoR4Minima.InterrupModeMenu.fallingEdge': 'falling edge',
-            'arduinoUnoR4Minima.InterrupModeMenu.changeEdge': 'change edge',
-            'arduinoUnoR4Minima.InterrupModeMenu.low': 'low',
-            'arduinoUnoR4Minima.eolMenu.warp': 'warp',
-            'arduinoUnoR4Minima.eolMenu.noWarp': 'no-warp',
-            'arduinoUnoR4Minima.dataTypeMenu.integer': 'integer',
-            'arduinoUnoR4Minima.dataTypeMenu.decimal': 'decimal',
-            'arduinoUnoR4Minima.dataTypeMenu.string': 'string',
-            'arduinoUnoR4Minima.category.pins': 'Pins',
-            'arduinoUnoR4Minima.pins.setPinMode': 'set pin [PIN] mode [MODE]',
-            'arduinoUnoR4Minima.pins.setDigitalOutput': 'set digital pin [PIN] out [LEVEL]',
-            'arduinoUnoR4Minima.pins.setPwmOutput': 'set pwm pin [PIN] out [OUT]',
-            'arduinoUnoR4Minima.pins.readDigitalPin': 'read digital pin [PIN]',
-            'arduinoUnoR4Minima.pins.readAnalogPin': 'read analog pin [PIN]',
-            'arduinoUnoR4Minima.pins.setServoOutput': 'set servo pin [PIN] out [OUT]',
-            'arduinoUnoR4Minima.pins.attachInterrupt': 'attach interrupt pin [PIN] mode [MODE] executes',
-            'arduinoUnoR4Minima.pins.detachInterrupt': 'detach interrupt pin [PIN]',
-            'arduinoUnoR4Minima.category.serial': 'Serial',
-            'arduinoUnoR4Minima.serial.serialBegin': 'serial begin baudrate [VALUE]',
-            'arduinoUnoR4Minima.serial.serialPrint': 'serial print [VALUE] [EOL]',
-            'arduinoUnoR4Minima.serial.serialAvailable': 'serial available data length',
-            'arduinoUnoR4Minima.serial.serialReadAByte': 'serial read a byte',
-            'arduinoUnoR4Minima.category.data': 'Data',
-            'arduinoUnoR4Minima.data.dataMap': 'map [DATA] from ([ARG0], [ARG1]) to ([ARG2], [ARG3])',
-            'arduinoUnoR4Minima.data.dataConstrain': 'constrain [DATA] between ([ARG0], [ARG1])',
-            'arduinoUnoR4Minima.data.dataConvert': 'convert [DATA] to [TYPE]',
-            'arduinoUnoR4Minima.data.dataConvertASCIICharacter': 'convert [DATA] to ASCII character',
-            'arduinoUnoR4Minima.data.dataConvertASCIINumber': 'convert [DATA] to ASCII nubmer'
-        },
-        'zh-tw': {
-            'arduinoUnoR4Minima.modeMenu.input': 'input',
-            'arduinoUnoR4Minima.modeMenu.output': 'output',
-            'arduinoUnoR4Minima.modeMenu.inputPullup': 'input-pullup',
-            'arduinoUnoR4Minima.levelMenu.high': 'high',
-            'arduinoUnoR4Minima.levelMenu.low': 'low',
-            'arduinoUnoR4Minima.InterrupModeMenu.risingEdge': 'rising edge',
-            'arduinoUnoR4Minima.InterrupModeMenu.fallingEdge': 'falling edge',
-            'arduinoUnoR4Minima.InterrupModeMenu.changeEdge': 'change edge',
-            'arduinoUnoR4Minima.InterrupModeMenu.low': 'low',
-            'arduinoUnoR4Minima.eolMenu.warp': 'warp',
-            'arduinoUnoR4Minima.eolMenu.noWarp': 'no-warp',
-            'arduinoUnoR4Minima.dataTypeMenu.integer': 'integer',
-            'arduinoUnoR4Minima.dataTypeMenu.decimal': 'decimal',
-            'arduinoUnoR4Minima.dataTypeMenu.string': 'string',
-            'arduinoUnoR4Minima.category.pins': 'Pins',
-            'arduinoUnoR4Minima.pins.setPinMode': 'set pin [PIN] mode [MODE]',
-            'arduinoUnoR4Minima.pins.setDigitalOutput': 'set digital pin [PIN] out [LEVEL]',
-            'arduinoUnoR4Minima.pins.setPwmOutput': 'set pwm pin [PIN] out [OUT]',
-            'arduinoUnoR4Minima.pins.readDigitalPin': 'read digital pin [PIN]',
-            'arduinoUnoR4Minima.pins.readAnalogPin': 'read analog pin [PIN]',
-            'arduinoUnoR4Minima.pins.setServoOutput': 'set servo pin [PIN] out [OUT]',
-            'arduinoUnoR4Minima.pins.attachInterrupt': 'attach interrupt pin [PIN] mode [MODE] executes',
-            'arduinoUnoR4Minima.pins.detachInterrupt': 'detach interrupt pin [PIN]',
-            'arduinoUnoR4Minima.category.serial': 'Serial',
-            'arduinoUnoR4Minima.serial.serialBegin': 'serial begin baudrate [VALUE]',
-            'arduinoUnoR4Minima.serial.serialPrint': 'serial print [VALUE] [EOL]',
-            'arduinoUnoR4Minima.serial.serialAvailable': 'serial available data length',
-            'arduinoUnoR4Minima.serial.serialReadAByte': 'serial read a byte',
-            'arduinoUnoR4Minima.category.data': 'Data',
-            'arduinoUnoR4Minima.data.dataMap': 'map [DATA] from ([ARG0], [ARG1]) to ([ARG2], [ARG3])',
-            'arduinoUnoR4Minima.data.dataConstrain': 'constrain [DATA] between ([ARG0], [ARG1])',
-            'arduinoUnoR4Minima.data.dataConvert': 'convert [DATA] to [TYPE]',
-            'arduinoUnoR4Minima.data.dataConvertASCIICharacter': 'convert [DATA] to ASCII character',
-            'arduinoUnoR4Minima.data.dataConvertASCIINumber': 'convert [DATA] to ASCII nubmer'
-        }
-    },
-    'blocks': {
         'en': {},
         'ru': {},
         'zh-cn': {},
         'zh-tw': {}
+    },
+    'blocks': {
+        'en': {
+            'SOFTWARESERIAL_CATEGORY': 'software serial',
+            'SOFTWARESERIAL_BEGIN': 'software serial %1 RX pin %2 TX pin %3 begin baudrate %4',
+            'SOFTWARESERIAL_PRINT': 'software serial %1 print %2 %3',
+            'SOFTWARESERIAL_WARP': 'warp',
+            'SOFTWARESERIAL_NOWARP': 'no-warp',
+            'SOFTWARESERIAL_AVAILABLE': 'software serial %1 available data length',
+            'SOFTWARESERIAL_READABYTE': 'software serial %1 read a byte'
+        },
+        'ru': {
+            'SOFTWARESERIAL_CATEGORY': 'software serial',
+            'SOFTWARESERIAL_BEGIN': 'software serial %1 RX pin %2 TX pin %3 begin baudrate %4',
+            'SOFTWARESERIAL_PRINT': 'software serial %1 print %2 %3',
+            'SOFTWARESERIAL_WARP': 'warp',
+            'SOFTWARESERIAL_NOWARP': 'no-warp',
+            'SOFTWARESERIAL_AVAILABLE': 'software serial %1 available data length',
+            'SOFTWARESERIAL_READABYTE': 'software serial %1 read a byte'
+        },
+        'zh-cn': {
+            'SOFTWARESERIAL_CATEGORY': 'software serial',
+            'SOFTWARESERIAL_BEGIN': 'software serial %1 RX pin %2 TX pin %3 begin baudrate %4',
+            'SOFTWARESERIAL_PRINT': 'software serial %1 print %2 %3',
+            'SOFTWARESERIAL_WARP': 'warp',
+            'SOFTWARESERIAL_NOWARP': 'no-warp',
+            'SOFTWARESERIAL_AVAILABLE': 'software serial %1 available data length',
+            'SOFTWARESERIAL_READABYTE': 'software serial %1 read a byte'
+        },
+        'zh-tw': {
+            'SOFTWARESERIAL_CATEGORY': 'software serial',
+            'SOFTWARESERIAL_BEGIN': 'software serial %1 RX pin %2 TX pin %3 begin baudrate %4',
+            'SOFTWARESERIAL_PRINT': 'software serial %1 print %2 %3',
+            'SOFTWARESERIAL_WARP': 'warp',
+            'SOFTWARESERIAL_NOWARP': 'no-warp',
+            'SOFTWARESERIAL_AVAILABLE': 'software serial %1 available data length',
+            'SOFTWARESERIAL_READABYTE': 'software serial %1 read a byte'
+        }
     }
 };
