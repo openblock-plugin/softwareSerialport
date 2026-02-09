@@ -28,8 +28,8 @@ export default {
             'softwareSerial.description': 'Allow serial communication on other digital pins of the Arduino.'
         },
         'zh-cn': {
-            'softwareSerial.name': 'Software Serial',
-            'softwareSerial.description': 'Allow serial communication on other digital pins of the Arduino.'
+            'softwareSerial.name': '软件串口',
+            'softwareSerial.description': '使 Arduino 可以使用其他数字口进行串口通信。'
         },
         'zh-tw': {
             'softwareSerial.name': 'Software Serial',
