@@ -1,6 +1,6 @@
 {
   "name": "software-serialport",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "ArthurZheng",
   "license": "MIT",
   "repository": {
@@ -27,11 +27,8 @@
       }
     },
     "extensionId": "softwareSerial",
-    "supportDevice": [
-        "arduinoUno",
-        "arduinoNano",
-        "arduinoLeonardo",
-        "arduinoMega2560"
+    "arch": [
+      "arduino-*"
     ],
     "iconURL": "./assets/softwareSerial.png",
     "description": {
@@ -45,7 +42,9 @@
     "toolbox": "./src/toolbox.js",
     "generator": "./src/generator.js",
     "translations": "./src/translations.js",
-    "tags": ["other"],
+    "tags": [
+      "other"
+    ],
     "helpLink": "https://wiki.openblock.cc"
   },
   "devDependencies": {
